@@ -25,10 +25,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var navBar: UINavigationItem!
     
+    var storyList : [String: [String]] = [:]
+    
     var current = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.storyList = loadFromFile(externalFileNames: ["title", "content", "category"])
+        
+//        print(storyList)
+//        print(storyList["title"]![0])
+//        print("==========")
+//        print(storyList[title][0])
         
         loadStory()
         btnPrev.isEnabled = false
@@ -68,9 +77,28 @@ class ViewController: UIViewController {
     
     func loadStory() {
         navBar.prompt = "第 \(current) 篇"
-        lbTitle.text = "\(storyTitle[current])"
-        tvContent.text = "\(storyContent[current])"
-        lbCate.text = "\(storyCategory[current])"
+        // TODO: use storyList
+        lbTitle.text = storyList["title"]![current]
+        tvContent.text = storyList["content"]![current]
+        lbCate.text = storyList["category"]![current]
+    }
+    
+    func loadFromFile(externalFileNames: [String]) -> [String: [String]]{
+        var out : [String: [String]] = [:]
+        
+        for i in 0 ..< externalFileNames.count {
+            let fileName = externalFileNames[i]
+            if let path = Bundle.main.path(forResource: fileName, ofType: "") {
+                do {
+                    let data = try String(contentsOfFile: path, encoding: .utf8)    // short for String.Encoding.utf8
+                    let myStrings = data.components(separatedBy: "</br>")           // seperator is "</br>"
+                    out.updateValue(myStrings, forKey: fileName)
+                } catch {
+                    print(error)
+                }
+            }
+        }
+        return out
     }
 }
 
