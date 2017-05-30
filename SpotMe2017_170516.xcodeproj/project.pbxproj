@@ -13,6 +13,10 @@
 		A0B8523A1ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0B852381ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld */; };
 		A0B8523C1ECADC5A00B07429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B8523B1ECADC5A00B07429 /* Assets.xcassets */; };
 		A0B8523F1ECADC5A00B07429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B8523D1ECADC5A00B07429 /* LaunchScreen.storyboard */; };
+		A0B852471ECC6FB300B07429 /* stories.csv in Resources */ = {isa = PBXBuildFile; fileRef = A0B852461ECC6FB300B07429 /* stories.csv */; };
+		A0B852491ECC7A7400B07429 /* Category in Resources */ = {isa = PBXBuildFile; fileRef = A0B852481ECC7A7400B07429 /* Category */; };
+		A0B8524B1ECC7CE600B07429 /* title in Resources */ = {isa = PBXBuildFile; fileRef = A0B8524A1ECC7CE600B07429 /* title */; };
+		A0B8524D1ECC7D8800B07429 /* content in Resources */ = {isa = PBXBuildFile; fileRef = A0B8524C1ECC7D8800B07429 /* content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A0B8523B1ECADC5A00B07429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B8523E1ECADC5A00B07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B852401ECADC5A00B07429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B852461ECC6FB300B07429 /* stories.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stories.csv; sourceTree = "<group>"; };
+		A0B852481ECC7A7400B07429 /* Category */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Category; sourceTree = "<group>"; };
+		A0B8524A1ECC7CE600B07429 /* title */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = title; sourceTree = "<group>"; };
+		A0B8524C1ECC7D8800B07429 /* content */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 		A0B852301ECADC5A00B07429 /* SpotMe2017_170516 */ = {
 			isa = PBXGroup;
 			children = (
+				A0B852461ECC6FB300B07429 /* stories.csv */,
 				A0B852311ECADC5A00B07429 /* AppDelegate.swift */,
 				A0B852331ECADC5A00B07429 /* ViewController.swift */,
+				A0B8524C1ECC7D8800B07429 /* content */,
+				A0B852481ECC7A7400B07429 /* Category */,
+				A0B8524A1ECC7CE600B07429 /* title */,
 				A0B852351ECADC5A00B07429 /* Main.storyboard */,
 				A0B8523B1ECADC5A00B07429 /* Assets.xcassets */,
 				A0B8523D1ECADC5A00B07429 /* LaunchScreen.storyboard */,
@@ -129,6 +141,10 @@
 			files = (
 				A0B8523F1ECADC5A00B07429 /* LaunchScreen.storyboard in Resources */,
 				A0B8523C1ECADC5A00B07429 /* Assets.xcassets in Resources */,
+				A0B8524D1ECC7D8800B07429 /* content in Resources */,
+				A0B852471ECC6FB300B07429 /* stories.csv in Resources */,
+				A0B8524B1ECC7CE600B07429 /* title in Resources */,
+				A0B852491ECC7A7400B07429 /* Category in Resources */,
 				A0B852371ECADC5A00B07429 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
