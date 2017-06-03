@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    //test
+    
     let storyNums = 128
 
     @IBOutlet weak var lbTitle: UILabel!
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var navBar: UINavigationItem!
     
-    var storyList : [String: [String]] = [:]
+    var storyList: [String: [String]] = [: ]
     
     var current = 0
     
@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         loadFromFile(externalFileNames: ["title", "content", "category"])
         
         loadStory()
-        btnPrev.isEnabled = false
         
     }
 
@@ -37,31 +36,40 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func prevStory(_ sender: UIButton) {
-        if current > 0 {
-            current -= 1
+    
+    // Shake to load random story.
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if event?.subtype == UIEventSubtype.motionShake {
+            let randomNum = Int(arc4random() % UInt32(storyNums))
+            current = randomNum
             loadStory()
-            if current == 0 {
-                btnPrev.isEnabled = false
-            }
-        }
-        if current <= storyNums {
-            btnNext.isEnabled = true
         }
     }
+    
+    @IBAction func prevBtnPressed(_ sender: UIButton) {
+        prevStory()
+    }
+    
+    @IBAction func nextBtnPressed(_ sender: UIButton) {
+        nextStory()
+    }
 
-    @IBAction func nextStory(_ sender: UIButton) {
-        if current <= storyNums {
+    func prevStory() {
+        if current == 0 {
+            current = storyNums - 1
+        } else {
+            current -= 1
+        }
+        loadStory()
+    }
+    
+    func nextStory() {
+        if current == 127 {
+            current = 0
+        } else {
             current += 1
-            loadStory()
-            if current == storyNums - 1 {
-                btnNext.isEnabled = false
-            }
         }
-        if current > 0 {
-            btnPrev.isEnabled = true
-        }
+        loadStory()
     }
     
     func loadStory() {
@@ -69,7 +77,15 @@ class ViewController: UIViewController {
         // TODO: use storyList
         lbTitle.text = storyList["title"]![current]
         tvContent.text = storyList["content"]![current]
-        lbCate.text = storyList["category"]![current]
+        navBar.title = storyList["category"]![current]
+    }
+    
+    @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        nextStory()
+    }
+    
+    @IBAction func swipeRight(_ sender: UISwipeGestureRecognizer) {
+        prevStory()
     }
     
     func loadFromFile(externalFileNames: [String]) {

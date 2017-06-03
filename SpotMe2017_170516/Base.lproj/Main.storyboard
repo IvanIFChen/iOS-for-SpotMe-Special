@@ -84,7 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="上一篇"/>
                                 <connections>
-                                    <action selector="prevBtnPressed:" destination="mav-ao-J7J" eventType="touchUpInside" id="S10-8N-FmA"/>
+                                    <action selector="prevBtnPressed:" destination="mav-ao-J7J" eventType="touchUpInside" id="frR-5f-MsB"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -94,7 +94,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="下一篇"/>
                                 <connections>
-                                    <action selector="nextBtnPressed:" destination="mav-ao-J7J" eventType="touchUpInside" id="hKK-vY-6iQ"/>
+                                    <action selector="nextBtnPressed:" destination="mav-ao-J7J" eventType="touchUpInside" id="b3X-Lx-hgJ"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -109,17 +109,17 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APh-Zb-njR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="8fw-Tq-o8h">
+                <swipeGestureRecognizer direction="left" id="8fw-Tq-o8h" userLabel="Swipe Left">
                     <connections>
-                        <action selector="swipeLeft:" destination="mav-ao-J7J" id="ohh-6B-mNl"/>
+                        <action selector="swipeLeft:" destination="mav-ao-J7J" id="FDX-Jv-fJh"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="n6p-D4-9vQ">
+                <swipeGestureRecognizer direction="right" id="n6p-D4-9vQ" userLabel="Swipe Right">
                     <connections>
-                        <action selector="swipeRight:" destination="mav-ao-J7J" id="iVm-UA-GxH"/>
+                        <action selector="swipeRight:" destination="mav-ao-J7J" id="tsu-Q4-U61"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="up" id="Sfv-u6-ySn">
+                <swipeGestureRecognizer direction="up" id="Sfv-u6-ySn" userLabel="Swipe Up">
                     <connections>
                         <segue destination="DoS-hk-7kD" kind="show" id="4QI-7e-zJV"/>
                     </connections>

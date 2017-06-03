@@ -13,11 +13,11 @@
 		860BA9C11EDE1D8700D6F32C /* title in Resources */ = {isa = PBXBuildFile; fileRef = 860BA9BE1EDE1D8700D6F32C /* title */; };
 		A06EB54C1EE251F500995DDB /* InsertNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EB54A1EE251F500995DDB /* InsertNameController.swift */; };
 		A06EB54D1EE251F500995DDB /* SpecialStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06EB54B1EE251F500995DDB /* SpecialStoryController.swift */; };
+		A06EB5501EE2682000995DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06EB54E1EE2682000995DDB /* LaunchScreen.storyboard */; };
 		A0B852321ECADC5A00B07429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B852311ECADC5A00B07429 /* AppDelegate.swift */; };
 		A0B852371ECADC5A00B07429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B852351ECADC5A00B07429 /* Main.storyboard */; };
 		A0B8523A1ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0B852381ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld */; };
 		A0B8523C1ECADC5A00B07429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B8523B1ECADC5A00B07429 /* Assets.xcassets */; };
-		A0B8523F1ECADC5A00B07429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B8523D1ECADC5A00B07429 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +27,12 @@
 		860BA9BE1EDE1D8700D6F32C /* title */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = title; sourceTree = "<group>"; };
 		A06EB54A1EE251F500995DDB /* InsertNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertNameController.swift; sourceTree = "<group>"; };
 		A06EB54B1EE251F500995DDB /* SpecialStoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialStoryController.swift; sourceTree = "<group>"; };
+		A06EB54F1EE2682000995DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B8522E1ECADC5A00B07429 /* SpotMe2017_170516.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMe2017_170516.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B852311ECADC5A00B07429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B852361ECADC5A00B07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0B852391ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotMe2017_170516.xcdatamodel; sourceTree = "<group>"; };
 		A0B8523B1ECADC5A00B07429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0B8523E1ECADC5A00B07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B852401ECADC5A00B07429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 				A06EB54A1EE251F500995DDB /* InsertNameController.swift */,
 				A06EB54B1EE251F500995DDB /* SpecialStoryController.swift */,
 				A0B852351ECADC5A00B07429 /* Main.storyboard */,
+				A06EB54E1EE2682000995DDB /* LaunchScreen.storyboard */,
 				A0B8523B1ECADC5A00B07429 /* Assets.xcassets */,
-				A0B8523D1ECADC5A00B07429 /* LaunchScreen.storyboard */,
 				A0B852401ECADC5A00B07429 /* Info.plist */,
 				A0B852381ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld */,
 			);
@@ -151,9 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				860BA9C01EDE1D8700D6F32C /* content in Resources */,
-				A0B8523F1ECADC5A00B07429 /* LaunchScreen.storyboard in Resources */,
 				860BA9C11EDE1D8700D6F32C /* title in Resources */,
 				A0B8523C1ECADC5A00B07429 /* Assets.xcassets in Resources */,
+				A06EB5501EE2682000995DDB /* LaunchScreen.storyboard in Resources */,
 				860BA9BF1EDE1D8700D6F32C /* category in Resources */,
 				A0B852371ECADC5A00B07429 /* Main.storyboard in Resources */,
 			);
@@ -177,20 +177,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A06EB54E1EE2682000995DDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06EB54F1EE2682000995DDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		A0B852351ECADC5A00B07429 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A0B852361ECADC5A00B07429 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A0B8523D1ECADC5A00B07429 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0B8523E1ECADC5A00B07429 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -293,10 +293,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U2M9F9E5A4;
 				INFOPLIST_FILE = SpotMe2017_170516/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.SpotMe2017-170516";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -306,10 +308,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U2M9F9E5A4;
 				INFOPLIST_FILE = SpotMe2017_170516/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.SpotMe2017-170516";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
