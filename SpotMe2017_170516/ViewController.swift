@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    //test
     let storyNums = 128
 
     @IBOutlet weak var lbTitle: UILabel!
