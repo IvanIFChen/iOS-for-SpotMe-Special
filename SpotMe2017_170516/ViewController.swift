@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var tvContent: UITextView!
     @IBOutlet weak var lbCate: UILabel!
+    @IBOutlet weak var lbStoryNum: UILabel!
     @IBOutlet weak var btnPrev: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var navBar: UINavigationItem!
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     func loadStory() {
-        navBar.prompt = "第 \(current) 篇"
+        lbStoryNum.text = "No.\(current)"
         // TODO: use storyList
         lbTitle.text = storyList["title"]![current]
         tvContent.text = storyList["content"]![current]

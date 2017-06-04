@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvE-Aa-AND">
-                                <rect key="frame" x="0.0" y="110" width="375" height="24"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,21 +51,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Story Content" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-WV-0nx">
-                                <rect key="frame" x="16" y="150" width="343" height="470.5"/>
+                                <rect key="frame" x="16" y="120" width="343" height="500.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No.num" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra6-hP-wKV">
+                                <rect key="frame" x="316" y="622" width="51" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="mBw-Y4-hIR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ZvE-Aa-AND" firstAttribute="top" secondItem="PBf-Zf-Xhm" secondAttribute="bottom" constant="16" id="7KD-B3-iQq"/>
                             <constraint firstItem="RYa-bZ-nsF" firstAttribute="top" secondItem="fRP-fK-n7J" secondAttribute="bottom" constant="16" id="7zC-k2-qWq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ra6-hP-wKV" secondAttribute="trailing" constant="-8" id="CHg-QM-bjW"/>
                             <constraint firstItem="fRP-fK-n7J" firstAttribute="top" secondItem="2lX-WV-0nx" secondAttribute="bottom" constant="16" id="DO7-Th-js6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2lX-WV-0nx" secondAttribute="trailing" id="T7a-AW-icN"/>
                             <constraint firstItem="2lX-WV-0nx" firstAttribute="top" secondItem="ZvE-Aa-AND" secondAttribute="bottom" constant="16" id="T9T-IM-LsA"/>
                             <constraint firstAttribute="leadingMargin" secondItem="2lX-WV-0nx" secondAttribute="leading" id="Whg-w9-yZK"/>
+                            <constraint firstItem="RYa-bZ-nsF" firstAttribute="top" secondItem="Ra6-hP-wKV" secondAttribute="bottom" constant="30" id="cmC-IO-CUi"/>
                             <constraint firstItem="2lX-WV-0nx" firstAttribute="centerX" secondItem="IAK-MX-urg" secondAttribute="centerX" id="es6-t6-rEx"/>
                             <constraint firstItem="fRP-fK-n7J" firstAttribute="centerX" secondItem="IAK-MX-urg" secondAttribute="centerX" id="h7P-Ks-CQj"/>
                             <constraint firstItem="ZvE-Aa-AND" firstAttribute="width" secondItem="IAK-MX-urg" secondAttribute="width" id="mHh-VB-oll"/>
@@ -77,10 +88,10 @@
                             <outletCollection property="gestureRecognizers" destination="Sfv-u6-ySn" appends="YES" id="Mr6-Sl-ap5"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Category" prompt="第 0 篇" id="UzX-PG-LwA">
+                    <navigationItem key="navigationItem" title="Category" id="UzX-PG-LwA">
                         <barButtonItem key="leftBarButtonItem" id="sOH-pO-6Hf">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RjR-V6-plU">
-                                <rect key="frame" x="16" y="37" width="83" height="30"/>
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="上一篇"/>
                                 <connections>
@@ -90,7 +101,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="4Zo-45-bl9">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PCP-5c-3kk">
-                                <rect key="frame" x="276" y="37" width="83" height="30"/>
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="下一篇"/>
                                 <connections>
@@ -103,6 +114,7 @@
                         <outlet property="btnNext" destination="PCP-5c-3kk" id="sKn-ae-i8G"/>
                         <outlet property="btnPrev" destination="RjR-V6-plU" id="Pq0-uT-7Lv"/>
                         <outlet property="lbCate" destination="fRP-fK-n7J" id="MM7-HS-Ep3"/>
+                        <outlet property="lbStoryNum" destination="Ra6-hP-wKV" id="JNS-09-9zY"/>
                         <outlet property="lbTitle" destination="ZvE-Aa-AND" id="vQj-vE-3sr"/>
                         <outlet property="navBar" destination="UzX-PG-LwA" id="BLi-ME-Hwt"/>
                         <outlet property="tvContent" destination="2lX-WV-0nx" id="8G9-Rw-KlP"/>
