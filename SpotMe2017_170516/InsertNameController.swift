@@ -23,6 +23,7 @@ class InsertNameController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Special"
         btnOK.isEnabled = false
     }
     
@@ -48,11 +49,28 @@ class InsertNameController: UIViewController {
     }
     
     @IBAction func enterGuest(_ sender: UIButton) {
+        let alert = UIAlertController(title: "請輸入通關密語", message: "主顧榮譽書院的基本要求。(6字)", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: nil)
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "確定", style: .default, handler: { ACTION in
+            if let passwdTextField = alert.textFields?[0] {
+                print(passwdTextField.text!)
+                if passwdTextField.text == "全程準時參與" {
+                    self.performSegue(withIdentifier: "toGuestStory", sender: self)
+                } else {
+                    print("wrong passwd")
+                    let wrongPasswdAlert = UIAlertController(title: "錯誤", message: "請再試一次", preferredStyle: .alert)
+                    wrongPasswdAlert.addAction(UIAlertAction(title: "確定", style: .default, handler: nil))
+                    self.present(wrongPasswdAlert, animated: true, completion: nil)
+                }
+            }
+        }))
         
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "guestLogin" {
+        if segue.identifier == "toGuestStory" {
             let pass = segue.destination as! SpecialStoryController
             let data = "Guest"
             pass.data = data
