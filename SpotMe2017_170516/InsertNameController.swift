@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class InsertNameController: UIViewController {
     
@@ -59,6 +60,10 @@ class InsertNameController: UIViewController {
                     self.performSegue(withIdentifier: "toGuestStory", sender: self)
                 } else {
                     print("wrong passwd")
+                    // log the attempted password
+                    Analytics.logEvent("insert_name", parameters: [
+                        "wrong_password": passwdTextField.text! as NSObject
+                        ])
                     let wrongPasswdAlert = UIAlertController(title: "錯誤", message: "請再試一次", preferredStyle: .alert)
                     wrongPasswdAlert.addAction(UIAlertAction(title: "確定", style: .default, handler: nil))
                     self.present(wrongPasswdAlert, animated: true, completion: nil)

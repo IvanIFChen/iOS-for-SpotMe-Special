@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -74,8 +75,11 @@ class ViewController: UIViewController {
     }
     
     func loadStory() {
+        Analytics.logEvent("main_page", parameters: [
+            "view_story": current as NSObject
+            ])
+        
         lbStoryNum.text = "No.\(current)"
-        // TODO: use storyList
         lbTitle.text = storyList["title"]![current]
         tvContent.text = storyList["content"]![current]
         navBar.title = storyList["category"]![current]

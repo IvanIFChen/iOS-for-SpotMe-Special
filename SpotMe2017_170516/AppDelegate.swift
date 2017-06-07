@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor(colorLiteralRed: 50 / 255, green: 50 / 255, blue: 150 / 255, alpha: 1)
         UINavigationBar.appearance().tintColor = UIColor.white
         UIApplication.shared.statusBarStyle = .lightContent
+        
+        FirebaseApp.configure()
+        
         return true
     }
 
