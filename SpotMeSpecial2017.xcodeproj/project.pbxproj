@@ -28,7 +28,7 @@
 		A06EB54A1EE251F500995DDB /* InsertNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertNameController.swift; sourceTree = "<group>"; };
 		A06EB54B1EE251F500995DDB /* SpecialStoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialStoryController.swift; sourceTree = "<group>"; };
 		A06EB54F1EE2682000995DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A0B8522E1ECADC5A00B07429 /* SpotMe2017_170516.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMe2017_170516.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B8522E1ECADC5A00B07429 /* SpotMeSpecial2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMeSpecial2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B852311ECADC5A00B07429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B852361ECADC5A00B07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0B852391ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotMe2017_170516.xcdatamodel; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		A0B852251ECADC5A00B07429 = {
 			isa = PBXGroup;
 			children = (
-				A0B852301ECADC5A00B07429 /* SpotMe2017_170516 */,
+				A0B852301ECADC5A00B07429 /* SpotMeSpecial2017 */,
 				A0B8522F1ECADC5A00B07429 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,12 +68,12 @@
 		A0B8522F1ECADC5A00B07429 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0B8522E1ECADC5A00B07429 /* SpotMe2017_170516.app */,
+				A0B8522E1ECADC5A00B07429 /* SpotMeSpecial2017.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0B852301ECADC5A00B07429 /* SpotMe2017_170516 */ = {
+		A0B852301ECADC5A00B07429 /* SpotMeSpecial2017 */ = {
 			isa = PBXGroup;
 			children = (
 				860BA9C21EDE1DEE00D6F32C /* data */,
@@ -87,15 +87,16 @@
 				A0B852401ECADC5A00B07429 /* Info.plist */,
 				A0B852381ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld */,
 			);
+			name = SpotMeSpecial2017;
 			path = SpotMe2017_170516;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A0B8522D1ECADC5A00B07429 /* SpotMe2017_170516 */ = {
+		A0B8522D1ECADC5A00B07429 /* SpotMeSpecial2017 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0B852431ECADC5A00B07429 /* Build configuration list for PBXNativeTarget "SpotMe2017_170516" */;
+			buildConfigurationList = A0B852431ECADC5A00B07429 /* Build configuration list for PBXNativeTarget "SpotMeSpecial2017" */;
 			buildPhases = (
 				A0B8522A1ECADC5A00B07429 /* Sources */,
 				A0B8522B1ECADC5A00B07429 /* Frameworks */,
@@ -105,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = SpotMe2017_170516;
+			name = SpotMeSpecial2017;
 			productName = SpotMe2017_170516;
-			productReference = A0B8522E1ECADC5A00B07429 /* SpotMe2017_170516.app */;
+			productReference = A0B8522E1ECADC5A00B07429 /* SpotMeSpecial2017.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A0B852291ECADC5A00B07429 /* Build configuration list for PBXProject "SpotMe2017_170516" */;
+			buildConfigurationList = A0B852291ECADC5A00B07429 /* Build configuration list for PBXProject "SpotMeSpecial2017" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -140,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0B8522D1ECADC5A00B07429 /* SpotMe2017_170516 */,
+				A0B8522D1ECADC5A00B07429 /* SpotMeSpecial2017 */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0B852291ECADC5A00B07429 /* Build configuration list for PBXProject "SpotMe2017_170516" */ = {
+		A0B852291ECADC5A00B07429 /* Build configuration list for PBXProject "SpotMeSpecial2017" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0B852411ECADC5A00B07429 /* Debug */,
@@ -329,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0B852431ECADC5A00B07429 /* Build configuration list for PBXNativeTarget "SpotMe2017_170516" */ = {
+		A0B852431ECADC5A00B07429 /* Build configuration list for PBXNativeTarget "SpotMeSpecial2017" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0B852441ECADC5A00B07429 /* Debug */,
