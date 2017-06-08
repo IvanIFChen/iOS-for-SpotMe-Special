@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class InsertNameController: UIViewController {
+class InsertNameController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var btnOK: UIButton!
     @IBOutlet weak var typeIn: UITextField!
@@ -29,6 +29,7 @@ class InsertNameController: UIViewController {
         super.viewDidLoad()
         title = "Special"
         btnOK.isEnabled = false
+        typeIn.delegate = self
         
         loadFromFile(externalFileNames: ["name", "hint", "key"])
     }
@@ -106,6 +107,15 @@ class InsertNameController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let pass = segue.destination as! SpecialStoryController
         pass.index = index
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        typeIn.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        typeIn.resignFirstResponder()
+        return true
     }
     
     func loadFromFile(externalFileNames: [String]) {
