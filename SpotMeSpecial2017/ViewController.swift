@@ -11,7 +11,7 @@ import Firebase
 
 class ViewController: UIViewController {
     
-    let storyNums = 128
+    var storyNums = 0
 
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var tvContent: UITextView!
@@ -29,8 +29,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadFromFile(externalFileNames: ["title", "content", "category"])
+        storyNums = storyList["title"]!.count
+        print(storyNums)
         
-        loadStory()
+        loadRandomStory()
         
     }
 
@@ -42,9 +44,7 @@ class ViewController: UIViewController {
     // Shake to load random story.
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if event?.subtype == UIEventSubtype.motionShake {
-            let randomNum = Int(arc4random() % UInt32(storyNums))
-            current = randomNum
-            loadStory()
+            loadRandomStory()
         }
     }
     
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     }
     
     func nextStory() {
-        if current == 127 {
+        if current == storyNums - 1 {
             current = 0
         } else {
             current += 1
@@ -79,10 +79,16 @@ class ViewController: UIViewController {
             "view_story": current as NSObject
             ])
         
-        lbStoryNum.text = "No.\(current)"
+//        lbStoryNum.text = "No.\(current)"
         lbTitle.text = storyList["title"]![current]
         tvContent.text = storyList["content"]![current]
         navBar.title = storyList["category"]![current]
+    }
+    
+    func loadRandomStory() {
+        let randomNum = Int(arc4random() % UInt32(storyNums))
+        current = randomNum
+        loadStory()
     }
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {

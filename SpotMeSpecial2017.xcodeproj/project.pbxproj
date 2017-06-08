@@ -20,6 +20,11 @@
 		A0B852371ECADC5A00B07429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B852351ECADC5A00B07429 /* Main.storyboard */; };
 		A0B8523A1ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0B852381ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld */; };
 		A0B8523C1ECADC5A00B07429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B8523B1ECADC5A00B07429 /* Assets.xcassets */; };
+		A0F8AE091EE974910026719F /* name in Resources */ = {isa = PBXBuildFile; fileRef = A0F8AE081EE974910026719F /* name */; };
+		A0F8AE0B1EE976D80026719F /* hint in Resources */ = {isa = PBXBuildFile; fileRef = A0F8AE0A1EE976D80026719F /* hint */; };
+		A0F8AE0D1EE976E70026719F /* key in Resources */ = {isa = PBXBuildFile; fileRef = A0F8AE0C1EE976E70026719F /* key */; };
+		A0F8AE0F1EE976FB0026719F /* D_title in Resources */ = {isa = PBXBuildFile; fileRef = A0F8AE0E1EE976FB0026719F /* D_title */; };
+		A0F8AE111EE977070026719F /* D_content in Resources */ = {isa = PBXBuildFile; fileRef = A0F8AE101EE977070026719F /* D_content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		A0B852391ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotMeSpecial2017.xcdatamodel; sourceTree = "<group>"; };
 		A0B8523B1ECADC5A00B07429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B852401ECADC5A00B07429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F8AE081EE974910026719F /* name */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name; sourceTree = "<group>"; };
+		A0F8AE0A1EE976D80026719F /* hint */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hint; sourceTree = "<group>"; };
+		A0F8AE0C1EE976E70026719F /* key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = key; sourceTree = "<group>"; };
+		A0F8AE0E1EE976FB0026719F /* D_title */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = D_title; sourceTree = "<group>"; };
+		A0F8AE101EE977070026719F /* D_content */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = D_content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 				860BA9BC1EDE1D8700D6F32C /* category */,
 				860BA9BD1EDE1D8700D6F32C /* content */,
 				860BA9BE1EDE1D8700D6F32C /* title */,
+				A0F8AE071EE971670026719F /* D&U */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -114,8 +125,19 @@
 				866666D11EE899A000CFD7A5 /* GoogleService-Info.plist */,
 				A0B852381ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld */,
 			);
-			name = SpotMeSpecial2017;
 			path = SpotMeSpecial2017;
+			sourceTree = "<group>";
+		};
+		A0F8AE071EE971670026719F /* D&U */ = {
+			isa = PBXGroup;
+			children = (
+				A0F8AE081EE974910026719F /* name */,
+				A0F8AE0A1EE976D80026719F /* hint */,
+				A0F8AE0C1EE976E70026719F /* key */,
+				A0F8AE0E1EE976FB0026719F /* D_title */,
+				A0F8AE101EE977070026719F /* D_content */,
+			);
+			name = "D&U";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +175,7 @@
 				TargetAttributes = {
 					A0B8522D1ECADC5A00B07429 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MHPQMR6R7U;
+						DevelopmentTeam = U2M9F9E5A4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -181,13 +203,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F8AE0D1EE976E70026719F /* key in Resources */,
 				860BA9C01EDE1D8700D6F32C /* content in Resources */,
 				860BA9C11EDE1D8700D6F32C /* title in Resources */,
 				A0B8523C1ECADC5A00B07429 /* Assets.xcassets in Resources */,
 				A06EB5501EE2682000995DDB /* LaunchScreen.storyboard in Resources */,
 				860BA9BF1EDE1D8700D6F32C /* category in Resources */,
+				A0F8AE091EE974910026719F /* name in Resources */,
 				A0B852371ECADC5A00B07429 /* Main.storyboard in Resources */,
 				866666D21EE899A000CFD7A5 /* GoogleService-Info.plist in Resources */,
+				A0F8AE0B1EE976D80026719F /* hint in Resources */,
+				A0F8AE0F1EE976FB0026719F /* D_title in Resources */,
+				A0F8AE111EE977070026719F /* D_content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,11 +399,11 @@
 			baseConfigurationReference = 593DB9AECFB4098D8771623B /* Pods-SpotMeSpecial2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MHPQMR6R7U;
+				DEVELOPMENT_TEAM = U2M9F9E5A4;
 				INFOPLIST_FILE = SpotMeSpecial2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SpotMeMemorial2017;
+				PRODUCT_BUNDLE_IDENTIFIER = pu.SpotMeMemorial2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,11 +415,11 @@
 			baseConfigurationReference = 4A6C5E0B3EEE6CAD0A748204 /* Pods-SpotMeSpecial2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MHPQMR6R7U;
+				DEVELOPMENT_TEAM = U2M9F9E5A4;
 				INFOPLIST_FILE = SpotMeSpecial2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SpotMeMemorial2017;
+				PRODUCT_BUNDLE_IDENTIFIER = pu.SpotMeMemorial2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
