@@ -36,7 +36,7 @@
         <!--Category-->
         <scene sceneID="QqR-RH-kT2">
             <objects>
-                <viewController id="mav-ao-J7J" customClass="ViewController" customModule="SpotMe2017_170516" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mav-ao-J7J" customClass="ViewController" customModule="SpotMeSpecial2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PBf-Zf-Xhm"/>
                         <viewControllerLayoutGuide type="bottom" id="RYa-bZ-nsF"/>
@@ -150,7 +150,7 @@
         <!--Insert Name Controller-->
         <scene sceneID="R9C-C6-hxB">
             <objects>
-                <viewController id="DoS-hk-7kD" customClass="InsertNameController" customModule="SpotMe2017_170516" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DoS-hk-7kD" customClass="InsertNameController" customModule="SpotMeSpecial2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TKX-6x-D5t"/>
                         <viewControllerLayoutGuide type="bottom" id="DWk-xH-7Qc"/>
@@ -253,7 +253,7 @@
         <!--Special Story Controller-->
         <scene sceneID="Dqi-p5-nJA">
             <objects>
-                <viewController id="YfF-67-k4R" customClass="SpecialStoryController" customModule="SpotMe2017_170516" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YfF-67-k4R" customClass="SpecialStoryController" customModule="SpotMeSpecial2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UPN-8I-4tH"/>
                         <viewControllerLayoutGuide type="bottom" id="ohq-GY-xup"/>

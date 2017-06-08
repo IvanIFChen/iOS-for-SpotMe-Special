@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SpotMe2017_170516
+//  SpotMeSpecial2017
 //
 //  Created by csie_02 on 2017/5/16.
 //  Copyright © 2017年 csie_02. All rights reserved.
@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "SpotMe2017_170516")
+        let container = NSPersistentContainer(name: "SpotMeSpecial2017")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

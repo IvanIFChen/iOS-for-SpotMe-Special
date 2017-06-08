@@ -18,7 +18,7 @@
 		A06EB5501EE2682000995DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06EB54E1EE2682000995DDB /* LaunchScreen.storyboard */; };
 		A0B852321ECADC5A00B07429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B852311ECADC5A00B07429 /* AppDelegate.swift */; };
 		A0B852371ECADC5A00B07429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B852351ECADC5A00B07429 /* Main.storyboard */; };
-		A0B8523A1ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0B852381ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld */; };
+		A0B8523A1ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0B852381ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld */; };
 		A0B8523C1ECADC5A00B07429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B8523B1ECADC5A00B07429 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		A0B8522E1ECADC5A00B07429 /* SpotMeSpecial2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMeSpecial2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B852311ECADC5A00B07429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B852361ECADC5A00B07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A0B852391ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotMe2017_170516.xcdatamodel; sourceTree = "<group>"; };
+		A0B852391ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotMeSpecial2017.xcdatamodel; sourceTree = "<group>"; };
 		A0B8523B1ECADC5A00B07429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B852401ECADC5A00B07429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,10 +112,10 @@
 				A0B8523B1ECADC5A00B07429 /* Assets.xcassets */,
 				A0B852401ECADC5A00B07429 /* Info.plist */,
 				866666D11EE899A000CFD7A5 /* GoogleService-Info.plist */,
-				A0B852381ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld */,
+				A0B852381ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld */,
 			);
 			name = SpotMeSpecial2017;
-			path = SpotMe2017_170516;
+			path = SpotMeSpecial2017;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +137,7 @@
 			dependencies = (
 			);
 			name = SpotMeSpecial2017;
-			productName = SpotMe2017_170516;
+			productName = SpotMeSpecial2017;
 			productReference = A0B8522E1ECADC5A00B07429 /* SpotMeSpecial2017.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -247,7 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860BA9BB1EDE1D7B00D6F32C /* ViewController.swift in Sources */,
-				A0B8523A1ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld in Sources */,
+				A0B8523A1ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld in Sources */,
 				A0B852321ECADC5A00B07429 /* AppDelegate.swift in Sources */,
 				A06EB54C1EE251F500995DDB /* InsertNameController.swift in Sources */,
 				A06EB54D1EE251F500995DDB /* SpecialStoryController.swift in Sources */,
@@ -373,7 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MHPQMR6R7U;
-				INFOPLIST_FILE = SpotMe2017_170516/Info.plist;
+				INFOPLIST_FILE = SpotMeSpecial2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SpotMeMemorial2017;
@@ -389,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MHPQMR6R7U;
-				INFOPLIST_FILE = SpotMe2017_170516/Info.plist;
+				INFOPLIST_FILE = SpotMeSpecial2017/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SpotMeMemorial2017;
@@ -423,13 +423,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A0B852381ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodeld */ = {
+		A0B852381ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A0B852391ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodel */,
+				A0B852391ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodel */,
 			);
-			currentVersion = A0B852391ECADC5A00B07429 /* SpotMe2017_170516.xcdatamodel */;
-			path = SpotMe2017_170516.xcdatamodeld;
+			currentVersion = A0B852391ECADC5A00B07429 /* SpotMeSpecial2017.xcdatamodel */;
+			path = SpotMeSpecial2017.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
