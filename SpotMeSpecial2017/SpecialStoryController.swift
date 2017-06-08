@@ -10,7 +10,8 @@ import UIKit
 
 class SpecialStoryController: UIViewController {
     
-    var data: String?
+    var index = 0
+    var storyFiles: [String: [String]] = [: ]
     
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var tvContent: UITextView!
@@ -18,15 +19,34 @@ class SpecialStoryController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if data == "Guest" {
-            lbTitle.text = "全程 準時 參與"
-            tvContent.text = "Guest Story"
-        } else {
-            
-        }
+        loadFromFile(externalFileNames: ["name", "D_title", "D_content"])
+        
+        loadDStory()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func loadDStory() {
+        lbTitle.text = storyFiles["D_title"]![index]
+        tvContent.text = storyFiles["D_content"]![index]
+    }
+    
+    func loadFromFile(externalFileNames: [String]) {
+        
+        for i in 0 ..< externalFileNames.count {
+            let fileName = externalFileNames[i]
+            if let path = Bundle.main.path(forResource: fileName, ofType: "") {
+                do {
+                    let data = try String(contentsOfFile: path, encoding: .utf8)    // short for String.Encoding.utf8
+                    let myStrings = data.components(separatedBy: "</br>")           // seperator is "</br>"
+                    self.storyFiles.updateValue(myStrings, forKey: fileName)
+                } catch {
+                    print(error)
+                }
+            }
+        }
+    }
+
 }

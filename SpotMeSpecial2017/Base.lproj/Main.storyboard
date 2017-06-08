@@ -166,13 +166,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是，我是" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-lA-rf9">
-                                <rect key="frame" x="56" y="144" width="69.5" height="20.5"/>
+                                <rect key="frame" x="79" y="144" width="69.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CtR-jg-xO7">
-                                <rect key="frame" x="133.5" y="139" width="86" height="30"/>
+                                <rect key="frame" x="156.5" y="139" width="86" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="86" id="vC5-3D-Hk6"/>
                                 </constraints>
@@ -184,7 +184,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZy-lZ-9Bm">
-                                <rect key="frame" x="233" y="144" width="17.5" height="20.5"/>
+                                <rect key="frame" x="256" y="144" width="17.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -196,7 +196,7 @@
                                 </constraints>
                                 <state key="normal" title="確認"/>
                                 <connections>
-                                    <action selector="typeFin:" destination="DoS-hk-7kD" eventType="touchUpInside" id="tB6-9V-VYk"/>
+                                    <action selector="typeFinish:" destination="DoS-hk-7kD" eventType="touchUpInside" id="nF3-CH-qJk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-L8-zlc">
@@ -209,8 +209,8 @@
                                     <action selector="enterGuest:" destination="DoS-hk-7kD" eventType="touchUpInside" id="nWs-FS-Yo2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你是 2017 主顧榮譽書院的師生嗎?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-4p-TsG">
-                                <rect key="frame" x="56" y="96" width="262.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你是主顧榮譽書院的師生嗎?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-4p-TsG">
+                                <rect key="frame" x="79" y="96" width="216.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -243,6 +243,7 @@
                         <outlet property="btnOK" destination="Bbt-zW-BeV" id="mpu-rx-XXG"/>
                         <outlet property="typeIn" destination="CtR-jg-xO7" id="YWl-eD-FjK"/>
                         <segue destination="YfF-67-k4R" kind="show" identifier="toGuestStory" id="TXy-40-ivr"/>
+                        <segue destination="YfF-67-k4R" kind="show" identifier="Login" id="rCg-wI-cLg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtI-kE-W27" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,7 +270,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uSmartCareer.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTc-mV-SJJ">
-                                <rect key="frame" x="134" y="616" width="106" height="31"/>
+                                <rect key="frame" x="134" y="632.5" width="106" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -291,7 +292,6 @@
                             <constraint firstItem="uHM-Sr-ZHA" firstAttribute="centerY" secondItem="kmA-O6-Pxa" secondAttribute="centerY" id="Kzk-1R-w1H"/>
                             <constraint firstItem="bL0-nm-vRs" firstAttribute="centerX" secondItem="kmA-O6-Pxa" secondAttribute="centerX" id="LQ2-s4-a9r"/>
                             <constraint firstItem="uHM-Sr-ZHA" firstAttribute="centerX" secondItem="BTc-mV-SJJ" secondAttribute="centerX" id="QEg-v2-bc5"/>
-                            <constraint firstItem="BTc-mV-SJJ" firstAttribute="top" secondItem="uHM-Sr-ZHA" secondAttribute="bottom" constant="63" id="QGf-Dk-QWU"/>
                             <constraint firstItem="uHM-Sr-ZHA" firstAttribute="leading" secondItem="kmA-O6-Pxa" secondAttribute="leadingMargin" id="sFf-7b-HrH"/>
                         </constraints>
                     </view>
@@ -302,7 +302,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5U-FI-XLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="1119"/>
+            <point key="canvasLocation" x="2021.5999999999999" y="1118.5907046476761"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rCg-wI-cLg"/>
+    </inferredMetricsTieBreakers>
 </document>
